@@ -4,6 +4,6 @@ git 'https://github.com/sarthak1208/flight'
 }
 stage('Compile-Package'){
 def mvnHome= tool name: '', type: 'maven'
-sh 'mvn package'
+sh '${mvnHome}/bin/mvn package'
 }
 }
